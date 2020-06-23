@@ -2,28 +2,91 @@
 <html>
 
 <head>
-    <title>Curso de desarrollo Web CV Developer</title>
     <meta charset="UTF-8" />
-    <meta name="Dev CV" content="Sebastian Gallego" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="author" content="Sebastian Gallego - Full Stack Web Developer" />
+    <title>Web Dev CV</title>
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
+    <link rel="stylesheet" href="assets/css/hover-min.css" />
+    <link rel="stylesheet" href="assets/css/animate.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/estyle.css" />
 </head>
 
-<body style="margin:0; font-family: sans-serif; text-align: center;">
+<body>
     <header>
-        <div style="background-color:darkblue;color:white; font-weight: bold; text-align: center;">
-            <h1 style="display: inline-block; padding: .5em; margin:0;">CV Sebastian Gallego</h1>
-            <div style="display: inline-block; padding: .5em;">Full Stack Web Developer</div>
+        <div class="cont_header">
+            <h1>Sebastian Gallego</h1>
+            <div>Full Stack Web Developer</div>
         </div>
     </header>
-    <div style="background-color:palevioletred; color:black; font-weight: bold; text-align: center;">
-        <div style="padding: 1em;">Over 2 years of experiencie building web applications, working in Frontend and Backend side</div>
-    </div>
-    <section style="display: inline-block; text-align: left;">
-        <div style="margin:2em;">
-            <div>
-                <div style="display: inline-block; padding-right: 2em;">
-                    <h3>Education</h3>
+
+    <div class="container_principal">
+        <ul class="cuadrados">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <ul class="cuadrados2">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+        <div class="container">
+            <div class="container">
+
+
+                <section class="content">
                     <div>
-                        <dl>
+                        <ul class="desc_content animate__animated  animate__slideInLeft">
+                            <li>
+                                Full Stack Web Developer
+                            </li>
+                            <li>
+                                Designer
+                            </li>
+                            <li>
+                                IU/UX Expert
+                            </li>
+                            <li>
+                                Over 2 years of experiencie building web applications, working in Frontend and Backend side
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="prof_photo animate__animated animate__slideInRight">
+                        <figcaption>
+                            <img src="assets/img/profile photo av.JPG" alt "profile photo">
+                        </figcaption>
+                    </div>
+                </section>
+                <section class="edu_content">
+                    <h3>
+                        <i class="fas fa-graduation-cap"></i> Education</h3>
+                    <div class="edu_content_item">
+                        <dl class="hvr-grow">
                             <dt>
                                 Tecnico en sistemas
                             </dt>
@@ -32,8 +95,8 @@
                             </dd>
                         </dl>
                     </div>
-                    <div>
-                        <dl>
+                    <div class="edu_content_item">
+                        <dl class="hvr-grow">
                             <dt>
                                 Análisis y desarrollo de sistemas de información
                             </dt>
@@ -42,8 +105,8 @@
                             </dd>
                         </dl>
                     </div>
-                    <div>
-                        <dl>
+                    <div class="edu_content_item">
+                        <dl class="hvr-grow">
                             <dt>
                                 Especialización en gestión y seguridad de bases de datos
                             </dt>
@@ -52,73 +115,120 @@
                             </dd>
                         </dl>
                     </div>
-                </div>
-                <div style="display: inline-block;">
-                    <figcaption>
-                        <img src="assets/profile photo av.JPG" alt "profile photo">
-                    </figcaption>
-                </div>
-            </div>
+                </section>
+                <section class="content">
+                    <div class="work_content">
+                        <h3>
+                            <i class="fas fa-building"></i>Work Experience</h3>
+                        <div>
+                            <dl class="hvr-grow">
+                                <dt>
+                                    FullStack Web Developer
+                                </dt>
+                                <dd>
+                                    Club Campestre de Cali
+                                </dd>
+                            </dl>
+                        </div>
+                        <div>
+                            <dl class="hvr-grow">
+                                <dt>
+                                    Help Desk Specialist
+                                </dt>
+                                <dd>
+                                    Fanalca S.A.
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                    <div class="skills_content">
+                        <h3>
+                            <i class="fas fa-laptop-code"></i> Skills</h3>
+                        <ul class="skills_content_items">
+                            <li>
+                                Angular
+                            </li>
+                            <li>
+                                JavaWeb
+                            </li>
+                            <li>
+                                Node
+                            </li>
+                            <li>
+                                PHP
+                            </li>
+                            <li>
+                                Javascript
+                            </li>
+                            <li>
+                                Laravel
+                            </li>
+                            <li>
+                                React
+                            </li>
 
-            <div style="max-width: 100%;">
-                <h3>Work Experience</h3>
-                <div>
-                    <dl>
-                        <dt>
-                            FullStack Web Developer
-                        </dt>
-                        <dd>
-                            Club Campestre de Cali
-                        </dd>
-                    </dl>
-                </div>
-                <div>
-                    <dl>
-                        <dt>
-                            Help Desk Specialist
-                        </dt>
-                        <dd>
-                            Fanalca S.A.
-                        </dd>
-                    </dl>
-                </div>
-            </div>
+                        </ul>
+                        <ul class="skills_content_items">
+                            <li>
+                                Ionic
+                            </li>
+                            <li>
+                                Android
+                            </li>
+                            <li>
+                                Docker
+                            </li>
+                            <li>
+                                API Rest
+                            </li>
+                            <li>
+                                Photoshop, Illustrator, Premiere
+                            </li>
+                            <li>
+                                Photographer
+                            </li>
+                            <li>
+                                Wordpress
+                            </li>
+                        </ul>
+                    </div>
+                </section>
 
-            <div style="max-width: 100%;">
-                <h3>Awards</h3>
-                <div>
-                    <ul>
-                        <li>
-                            First place in Senasoft Santander 2015 in Data Bases category
-                        </li>
-                        <li>
-                            Music interpretation in Casa de la cultura Ricardo Nieto
-                        </li>
-                    </ul>
-                </div>
+                <section class="awards_content">
+                    <h3>
+                        <i class="fas fa-medal"></i> Awards</h3>
+                    <div>
+                        <ul>
+                            <li>
+                                First place in Senasoft Santander 2015 in Data Bases category
+                            </li>
+                            <li>
+                                Music interpretation in Casa de la cultura Ricardo Nieto
+                            </li>
+                        </ul>
+                    </div>
+                </section>
 
-            </div>
 
-            
-            <div style="max-width: 100%;">
-                <h3>More info</h3>
-                <div>
-                    <ul>
-                        <li>
-                            <a href="https://github.com/SEBASCAMPEON" target="_blank">Github Repository</a>
-                        </li>
-                        <li>
-                            <a href="https://linkedin.com" target="_blank">Linkedin Profile</a>
-                        </li>
-                        <li>
-                            <a href="https://Instagram.com" target="_blank">Instagram</a>
-                        </li>
-                    </ul>
-                </div>
-
+                <section class="more_content">
+                    <h3>
+                        <i class="fas fa-info-circle"></i> More info
+                    </h3>
+                    <div>
+                        <ul class="info_detail">
+                            <li>
+                                <a href="https://github.com/SEBASCAMPEON" target="_blank">
+                                    <i class="fab fa-git-alt"></i> Github Repository</a>
+                            </li>
+                            <li>
+                                <a href="https://linkedin.com" target="_blank">
+                                    <i class="fab fa-linkedin"></i> Linkedin Profile</a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
             </div>
         </div>
-    </section>
 </body>
 
 </html>
