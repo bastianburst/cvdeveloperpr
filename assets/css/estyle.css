@@ -34,7 +34,7 @@ section{
 }
 
 .desc_content{
-    font-size:1.2em;
+    font-size:1em;
     max-width: 60%;
 }
 .desc_content > li{
@@ -51,13 +51,17 @@ section{
     padding: 2em;
 }
 .edu_content_item{
-
+    text-align: left;
+}
+.edu_content_item > dl{
+    font-size:1.1em;
 }
 .skills_content{
     padding: 1em;
     margin-right:2em;
     font-display: flex;
     justify-content: space-between;
+    font-size: 1em;
 }
 .skills_content_items{
     display: inline-block;
@@ -68,18 +72,30 @@ section{
     margin:.2em;
     background: #334565;
     border-radius: 5%;
+    z-index:10;
 }
 .skills_content_items > li:hover{
     background: rgba(230, 116, 24, 0.25);
 }
 .work_content{
     padding: 1em;
+    font-size: 1em;
 }
 .awards_content{
     padding: 2em;
-}   
+}
+.awards_content > div > ul {
+    display: inline-block;
+}
+.awards_content > div > ul > li{
+    list-style: none;
+    font-size:1.1em;
+    display: block;
+    text-align: left;
+}     
 .more_content{
     padding: 2em;
+    font-size: 1.1em;
 }
 .cont_header{
     background-color:#506f9e;
@@ -95,15 +111,28 @@ section{
     display: inline-block; 
     padding: .5em;
 }
+.info_detail{
+    display: inline-block;
+    text-align: left;
+}
 .info_detail > li{
     list-style: none;
+    color:black;
+}
+.fa-git-alt{
+    color: rgb(197, 62, 13);
+    font-size:1.5em;
+}
+.fa-linkedin{
+    color: rgb(41, 41, 126);
+    font-size:1.5em;
 }
 /*animation square*/
 .cuadrados, .cuadrados2{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 80%;
     height: 80%;
     z-index: 0;
 }
@@ -266,7 +295,17 @@ section{
     100% { transform: translateY(-700px) rotate(600deg); }
 }
 
-
+/**animación giro photo*/
+@keyframes rotate {from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}}
+@-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
+  to {-webkit-transform: rotate(360deg);}}
+#photo:hover{
+    -webkit-animation: 3s rotate linear infinite;
+    animation: 3s rotate linear infinite;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
 /*media queries*/
 @media(max-width:600px){
     .content{
