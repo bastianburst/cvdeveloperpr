@@ -5,6 +5,16 @@ $(document).ready(function () {
     var skills = document.querySelector(".skills_content");
     var work = document.querySelector(".work_content");
     var awards = document.querySelector(".awards_content");
+    var brief = document.querySelector(".portfolio_content");
+
+    $('#ccc').click(function () {
+        var $item = $('.cccprojects');
+        $item.slideToggle();
+    });
+    $('#ppp').click(function(){
+        var $item2 = $('.ppp_projects');
+        $item2.slideToggle();
+    });
 
     $(window).scroll(function () {
         var target = document.querySelector('.more_content'), //El elemento que quiero testear
@@ -14,7 +24,7 @@ $(document).ready(function () {
         if (inView(target)) {
             //Activo las animaciones
             info.classList.add('animate__animated');
-            info.classList.add('animate__slideInLeft');
+            info.classList.add('animate__slideInUp');
         }
 
     });
@@ -26,7 +36,7 @@ $(document).ready(function () {
         if (inView(target)) {
             //Activo las animaciones
             edu.classList.add('animate__animated');
-            edu.classList.add('animate__slideInRight');
+            edu.classList.add('animate__slideInUp');
         }
 
     });
@@ -38,7 +48,7 @@ $(document).ready(function () {
         if (inView(target)) {
             //Activo las animaciones
             skills.classList.add('animate__animated');
-            skills.classList.add('animate__slideInRight');
+            skills.classList.add('animate__slideInUp');
         }
 
     });
@@ -50,7 +60,19 @@ $(document).ready(function () {
         if (inView(target)) {
             //Activo las animaciones
             work.classList.add('animate__animated');
-            work.classList.add('animate__slideInLeft');
+            work.classList.add('animate__slideInUp');
+        }
+
+    });
+    $(window).scroll(function () {
+        var target = document.querySelector('.portfolio_content'), //El elemento que quiero testear
+            windowHeight = $(window).height();
+
+        //Si el elemento es visible al realizar scroll
+        if (inView(target)) {
+            //Activo las animaciones
+            brief.classList.add('animate__animated');
+            brief.classList.add('animate__slideInUp');
         }
 
     });
@@ -62,7 +84,7 @@ $(document).ready(function () {
         if (inView(target)) {
             //Activo las animaciones
             awards.classList.add('animate__animated');
-            awards.classList.add('animate__slideInRight');
+            awards.classList.add('animate__slideInUp');
         }
 
     });

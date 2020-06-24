@@ -8,7 +8,7 @@ body{
     font-family: sans-serif;
     text-align: center;
     font-family: 'Roboto', sans-serif;
-    overflow-x: hidden 
+    overflow-x: hidden; 
 }
 a{
     text-decoration: none;
@@ -18,7 +18,7 @@ section{
 }
 .container_principal{
     display: block; 
-    width: 100%;
+    margin:0;
 }
 .container{
     margin:0;
@@ -92,7 +92,14 @@ section{
     font-size:1.1em;
     display: block;
     text-align: left;
-}     
+}
+.portfolio_content_items{
+    text-align: center;
+}   
+.portfolio_content_items > ul > li{
+    max-width: 60%;
+    text-align: justify;
+}  
 .more_content{
     padding: 2em;
     font-size: 1.1em;
@@ -127,6 +134,29 @@ section{
     color: rgb(41, 41, 126);
     font-size:1.5em;
 }
+#ccc, #ppp{
+    cursor: pointer;
+    display: inline-block;
+    padding: .4em;
+    border-radius: 10px;
+    background: rgb(58, 93, 209);
+    color:white;
+}
+.cccprojects{
+    display: none;
+}
+.ppp_projects{
+    display: none;
+}
+.ppp_projects > li > div{
+    background: #334565;
+    padding: .2em;
+    border-radius: 5px;
+}
+.fa-arrow-alt-circle-down{
+    color:white;
+}
+
 /*animation square*/
 .cuadrados, .cuadrados2{
     position: absolute;
@@ -242,7 +272,7 @@ section{
             animation-duration: 30s;
 }
 .cuadrados li:nth-child(8), .cuadrados2 li:nth-child(8) {
-    left: 75%;
+    left: 35%;
     width: 150px;
     height: 150px;
     -webkit-animation-delay: 4s;
@@ -308,10 +338,17 @@ section{
 }
 /*media queries*/
 @media(max-width:600px){
+    body{
+        overflow-x: hidden;
+        max-width: 100%;
+    }
     .content{
         display: block;
     }
     .desc_content{
-    max-width: 100%
+        max-width: 100%
+    }
+    .cuadrados, .cuadrados2{
+        width: 60%;
     }
 }
