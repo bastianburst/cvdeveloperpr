@@ -15,6 +15,10 @@ $(document).ready(function () {
         var $item2 = $('.ppp_projects');
         $item2.slideToggle();
     });
+    $('#www').click(function () {
+        var $item = $('.work_projects');
+        $item.slideToggle();
+    });
 
     $(window).scroll(function () {
         var target = document.querySelector('.more_content'), //El elemento que quiero testear

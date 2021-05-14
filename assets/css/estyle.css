@@ -7,7 +7,7 @@ body{
     margin:0; 
     font-family: sans-serif;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Nunito', sans-serif;
     overflow-x: hidden; 
 }
 a{
@@ -22,6 +22,7 @@ section{
 }
 .container{
     margin:0;
+    margin-top: 4em;
 }
 .content{
     display: flex;
@@ -40,6 +41,9 @@ section{
 .desc_content > li{
     text-decoration:none;
     list-style: none;
+}
+.prof_photo{
+    padding-top: 2em;
 }
 .prof_photo > figcaption > img{
     display: inline-block;
@@ -95,52 +99,76 @@ section{
 }
 .portfolio_content_items{
     text-align: center;
-}   
-.portfolio_content_items > ul > li{
+} 
+.portfolio_content_items_ul{
+    padding: 0;
+}  
+.portfolio_content_items_ul li{
     max-width: 60%;
     text-align: justify;
+    list-style: none;
+    padding: .5em;
 }  
-.more_content{
-    padding: 2em;
-    font-size: 1.1em;
+.portfolio_content_items_ul li a{
+    text-decoration: none;
+    color:rgb(41, 48, 110);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
 }
 .cont_header{
     background-color:#506f9e;
     color:white; 
     font-weight: bold; 
     text-align: left;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    margin-bottom: 5em;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
-.cont_header > h1{
+.cont_header > h2{
     display: inline-block; 
-    padding: .5em; margin:0;
+    padding: 0; 
+    margin:0;
+    font-size: 15px;
 }
 .cont_header > div{
     display: inline-block; 
-    padding: .5em;
+    padding-left: 2em;
 }
-.info_detail{
+.navigator{
     display: inline-block;
-    text-align: left;
+    padding: 2em 1em;
 }
-.info_detail > li{
+.navigator > li{
+    display: inline-block;
     list-style: none;
-    color:black;
+    padding-right: .5em;
+    text-decoration: none;
+    color:aliceblue;
 }
-.fa-git-alt{
-    color: rgb(197, 62, 13);
-    font-size:1.5em;
+.navigator > li > a{
+    text-decoration: none;
+    color:aliceblue;
 }
-.fa-linkedin{
-    color: rgb(41, 41, 126);
-    font-size:1.5em;
-}
-#ccc, #ppp{
+
+
+#ccc, #ppp, #www{
     cursor: pointer;
     display: inline-block;
-    padding: .4em;
+    padding: .6em;
+    margin: .5em;
     border-radius: 10px;
     background: rgb(58, 93, 209);
     color:white;
+    width: 20em;
 }
 .cccprojects{
     display: none;
@@ -148,13 +176,64 @@ section{
 .ppp_projects{
     display: none;
 }
-.ppp_projects > li > div{
-    background: #334565;
-    padding: .2em;
-    border-radius: 5px;
+.work_projects{
+    display: none;
 }
 .fa-arrow-alt-circle-down{
     color:white;
+}
+
+.imgworkproject{
+    display: inline-block;
+}
+.more_content{
+    padding: 1em;
+    font-size: 1.1em;
+    background-color: #232323;
+    color:white;
+}
+.info_detail{
+    display: inline-block;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin:0;
+    padding: 0;
+}
+.info_detail > li{
+    list-style: none;
+    color:white;
+    text-align: center;
+    padding: 1em;
+}
+.info_detail li a{
+    color:white;
+    list-style: none;
+}
+.fa-instagram-square{
+    color: white;
+    font-size:1.5em;
+}
+.fa-github{
+    color: white;
+    font-size:1.5em;
+}
+.fa-linkedin{
+    color: white;
+    font-size:1.5em;
+}
+.fa-behance-square{
+    color: white;
+    font-size:1.5em;
+}
+.firm{
+    position: fixed;
+    right: 0;
+    left:0;
+    bottom: .5em;
+    text-align: center;
+    font-size:15px;
 }
 
 /*animation square*/
@@ -346,9 +425,23 @@ section{
         display: block;
     }
     .desc_content{
-        max-width: 100%
+        max-width: 100%;
+        margin-top: 2.5em;
     }
     .cuadrados, .cuadrados2{
         width: 60%;
+    }
+    .container{
+        margin-top: 6.5em;
+    }
+    .cont_header{
+        display: inline-block;
+    }
+    .navigator{
+        padding: 1em 0;
+    }
+    
+    #ccc, #ppp, #www{
+        width: 90%;
     }
 }
