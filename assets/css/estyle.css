@@ -28,7 +28,7 @@ section{
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
-    background: #232323;
+    background: #334565;
     color:white;
     padding: 2em;
     text-align: left;
@@ -77,6 +77,7 @@ section{
     background: #334565;
     border-radius: 5%;
     z-index:10;
+    border: 1px solid white;
 }
 .skills_content_items > li:hover{
     background: rgba(230, 116, 24, 0.25);
@@ -119,7 +120,7 @@ section{
     font-weight: 600;
 }
 .cont_header{
-    background-color:#506f9e;
+    background-color:#232323;
     color:white; 
     font-weight: bold; 
     text-align: left;
@@ -166,7 +167,7 @@ section{
     padding: .6em;
     margin: .5em;
     border-radius: 10px;
-    background: rgb(58, 93, 209);
+    background: rgb(51, 69, 101);
     color:white;
     width: 20em;
 }
