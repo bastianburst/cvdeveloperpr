@@ -1,0 +1,30 @@
+/*media queries*/
+@media(max-width:600px){
+    body{
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+    .content{
+        display: block;
+    }
+    .desc_content{
+        max-width: 100%;
+        margin-top: 2.5em;
+    }
+    .cuadrados, .cuadrados2{
+        width: 60%;
+    }
+    .container{
+        margin-top: 6.5em;
+    }
+    .cont_header{
+        display: inline-block;
+    }
+    .navigator{
+        padding: 1em 0;
+    }
+    
+    #ccc, #ppp, #www{
+        width: 90%;
+    }
+}

@@ -1,0 +1,19 @@
+/*
+colors{
+    #353535
+}
+*/
+body{
+    margin:0; 
+    font-family: sans-serif;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    overflow-x: hidden; 
+}
+a{
+    text-decoration: none;
+}
+section{
+    margin: 0;
+}
+
