@@ -128,4 +128,6 @@
 
 .imgworkproject{
     display: inline-block;
+    background:#262626; 
+    border-radius:10px;
 }
